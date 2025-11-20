@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jérôme Vanheule - Chef de Projet Data & BI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #555;
+        }
+        
+        .section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 30px;
+            padding-left: 20px;
+            border-left: 3px solid #667eea;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 8px;
+        }
+        
+        .company {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        
+        .period {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+        
+        .achievement {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .achievement:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-category h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .skill-tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            margin: 5px 5px 5px 0;
+            font-size: 0.9em;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jérôme Vanheule</h1>
+            <p class="subtitle">Chef de Projet Data & Business Intelligence</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>jerome.vanheule@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>France</span>
+                </div>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <a href="https://linkedin.com/in/jeromevanheule" target="_blank" style="color: #667eea; text-decoration: none;">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <span>🐙</span>
+                    <a href="https://github.com/jeromevanheule-co" target="_blank" style="color: #667eea; text-decoration: none;">GitHub</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>👤 Profil</h2>
+            <p style="font-size: 1.1em; line-height: 1.8;">
+                Chef de Projet Data passionné avec plus de 10 ans d'expérience dans le pilotage de projets BI et Data Engineering. 
+                Expert en gouvernance des données, migration de plateformes analytiques et conduite du changement. 
+                Spécialisé dans la transformation digitale des organisations via l'exploitation optimale des données.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>💼 Expérience Professionnelle</h2>
+            
+            <div class="experience-item">
+                <h3>Chef de Projet Data & BI Team Lead</h3>
+                <p class="company">Entreprise Internationale</p>
+                <p class="period">2020 - Présent</p>
+                <div class="achievement">Management d'une équipe de 8 personnes (data analysts, data engineers)</div>
+                <div class="achievement">Coordination de projets data sur 3-4 pays européens</div>
+                <div class="achievement">Migration réussie de BusinessObjects vers Qlik Sense (+25% satisfaction utilisateurs)</div>
+                <div class="achievement">Déploiement de Dataiku avec réduction de 40% du temps de développement des pipelines</div>
+                <div class="achievement">Mise en place d'une gouvernance data RGPD-compliant</div>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Responsable Projets Business Intelligence</h3>
+                <p class="company">Groupe industriel</p>
+                <p class="period">2017 - 2020</p>
+                <div class="achievement">Pilotage de la migration de 1300+ rapports SAS/BO vers Power BI</div>
+                <div class="achievement">Réduction de 20% des temps de création de dashboards via automatisation</div>
+                <div class="achievement">Formation de 50+ utilisateurs métier aux nouveaux outils (Power BI, Qlik)</div>
+                <div class="achievement">Amélioration de 35% de la qualité des données via data quality management</div>
+            </div>
+            
+            <div class="experience-item">
+                <h3">Data Engineer & Administrateur Bases de Données</h3>
+                <p class="company">PME Tech</p>
+                <p class="period">2014 - 2017</p>
+                <div class="achievement">Conception et développement de pipelines ETL avec ODI (Oracle Data Integrator)</div>
+                <div class="achievement">Administration de bases SQL Server, Oracle et PostgreSQL (50+ TB)</div>
+                <div class="achievement">Optimisation des requêtes SQL avec gain de performance de 60%</div>
+                <div class="achievement">Création d'une architecture data warehouse from scratch</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎓 Formation & Enseignement</h2>
+            
+            <div class="education-item">
+                <h3>Formateur Data & BI</h3>
+                <p class="company">Établissement d'enseignement supérieur</p>
+                <p class="period">2022 - Présent</p>
+                <div class="achievement">Conception de programmes de formation data (10+ sessions)</div>
+                <div class="achievement">Enseignement Power BI, Qlik Sense, Python, SQL</div>
+                <div class="achievement">Création de datasets pédagogiques et cas d'usage pratiques</div>
+            </div>
+            
+            <div class="education-item">
+                <h3>BUT 2 Sciences des Données (Software Development)</h3>
+                <p class="company">Université / IUT</p>
+                <p class="period">2010 - 2013</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛠️ Compétences Techniques</h2>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Data Visualization</h4>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Qlik Sense</span>
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">DAX</span>
+                    <span class="skill-tag">QlikScript</span>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Data Engineering</h4>
+                    <span class="skill-tag">Dataiku</span>
+                    <span class="skill-tag">ODI</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">ETL/ELT</span>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Legacy Tools</h4>
+                    <span class="skill-tag">SAS</span>
+                    <span class="skill-tag">BusinessObjects</span>
+                    <span class="skill-tag">WebFocus</span>
+                    <span class="skill-tag">Crystal Reports</span>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Cloud & Databases</h4>
+                    <span class="skill-tag">GCP</span>
+                    <span class="skill-tag">BigQuery</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">Oracle</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Méthodologies</h4>
+                    <span class="skill-tag">Agile/Scrum</span>
+                    <span class="skill-tag">Data Governance</span>
+                    <span class="skill-tag">RGPD</span>
+                    <span class="skill-tag">Change Management</span>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Outils</h4>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Git/GitHub</span>
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Confluence</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📊 Réalisations Clés</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div class="stat">
+                    <div class="stat-number">1300+</div>
+                    <div class="stat-label">Objets BI migrés</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Gain productivité</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Membres d'équipe</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Utilisateurs formés</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
